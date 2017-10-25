@@ -1,0 +1,36 @@
+<!--
+  Generated template for the MoviesDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Movie Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list *ngIf="movie; else no_details">
+    <ion-list-header>{{movie.name}} ({{ movie.year}})    <ion-icon name="star" item-right>{{movie.rating}}</ion-icon></ion-list-header>
+
+<br/>
+
+<ion-item style="text-align:center;" no-lines><img width="182" height="268" src="{{movie.poster_url}}"></ion-item>
+<p >
+  
+</p>
+<p><b>Stars:</b> {{movie.stars}}</p>
+<p><b>Director:</b> {{movie.director}}</p>
+<p><b>Genre:</b> {{movie.genre}}</p>
+
+<p><b>Plot:</b> {{movie.plot}}</p>
+</ion-list>
+
+<ng-template #no_details> No Information Found!</ng-template>
+
+
+</ion-content>

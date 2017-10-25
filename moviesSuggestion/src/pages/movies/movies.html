@@ -8,15 +8,19 @@
   
   <ion-content padding>
     <ion-item>
-        <ion-input type="text"  value="Terminator 2" [(ngModel)]="mName" text-center></ion-input>
+        <ion-input type="text"  value="The Dark Knight" [(ngModel)]="mName" text-center></ion-input>
     </ion-item> 
     
     <button ion-button full (click)="ngOnInit()"> Go </button>
 
     <ion-list>
-        <ion-item *ngFor = "let movie of movies">
-            {{movie.Name}}
-        </ion-item>
+      <button ion-item *ngFor="let movie of movies" (click)="goToMovieDetailsPage(movie.Name)">
+        <h2>{{ movie.Name }}</h2>
+    
+      </button>
     </ion-list>
   </ion-content>
   
+
+
+

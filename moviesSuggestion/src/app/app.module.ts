@@ -8,6 +8,9 @@ import { AboutPage } from '../pages/about/about';
 import { SettingsPage } from '../pages/settings/settings';
 import { MoviesPage } from '../pages/movies/movies';
 import { TabsPage } from '../pages/tabs/tabs';
+import {ContactPage} from '../pages/contact/contact';
+import {HomePage} from '../pages/home/home';
+import { MoviesDetailsPage } from '../pages/movies-details/movies-details';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +21,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     MoviesPage,
     SettingsPage,
-    TabsPage
+    TabsPage,
+    MoviesDetailsPage,
+    ContactPage,HomePage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     MoviesPage,
     SettingsPage,
-    TabsPage
+    TabsPage,
+    MoviesDetailsPage,
+    ContactPage,HomePage
   ],
   providers: [
     StatusBar,
